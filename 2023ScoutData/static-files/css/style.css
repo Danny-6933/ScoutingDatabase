@@ -1,0 +1,40 @@
+/* style.css */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  /* .input-group>.input-group-prepend {
+      flex: 0 0 50px;
+  }
+  .input-group .input-group-bookend {
+      width: 100%;
+  }
+  .input-group>.input-group-append {
+      flex: 0 0 80px;
+  }
+  .modal-dialog {
+      width: 100%;
+      min-height: 100%;
+      padding: 0;
+      margin: 0; 
+  } */
+
+
+  /* .btn-success {
+      background-color: #145E30 !important;
+      border: #145E30 !important;
+  }
+  .btn-success:hover {
+    background-color: #469C2C !important;
+  } */
+  
+  
+  

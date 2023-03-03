@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Archytas QR Page</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--     <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/9243aa46-39ce-412a-b6dd-c06c90dd77e4%2Ffavicon-16x16.png?v=1581214118705"
+    /> -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <style>
+  
+    #loadingMessage {
+      text-align: center;
+      padding: 40px;
+      background-color: #eee;
+    }
+
+    #canvas {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    #output {
+      margin-top: 20px;
+      background: #eee;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+
+    #output div {
+      padding-bottom: 10px;
+      word-wrap: break-word;
+    }
+
+    #noQRFound {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="home-div">
+        <a href="/" class="btn btn-outline-success w-100 mt-3 mb-3 p-3">
+          Go Home
+        </a>  
+      </div>
+      <h1 class="display-4">
+ Read QR Code</h1>
+   <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
+  <canvas id="canvas" hidden></canvas>
+        <div onclick="location.reload();" class="btn btn-warning w-100 mt-3 mb-3 p-3">
+          Reload Page
+        </div>  
+  <div id="output" hidden>
+    
+<!--     <div id="actionButtons" class="invisible">
+      
+
+    </div> -->
+  </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">QR Data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="outputMessage"><i>Looking for a QR Code...</i></div>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button id="insertButton" class="btn btn-success btn-block" data-dismiss="modal">Save this report</button>
+      <button id="ignoreButton" class="btn btn-warning btn-block" data-dismiss="modal">Ignore this report</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+ <br>
+      
+<br>
+      <hr />
+     
+      <br>
+<!--       <button id="oneTeamButton">Get team</button>
+      <button id="allTeamsButton">List all teams</button>
+      <hr />
+      <div id="nameDiv"></div>
+      <img id="logoImage"
+        src="https://upload.wikimedia.org/wikipedia/commons/4/43/White_square_50%25_transparency.svg"
+        width="300"
+      />
+
+ -->
+<!--     <b>6933</b> Archytas
+      <a href="http://www.thebluealliance.com/team/6933/2020">
+      <img height="18px" src="https://cdn.glitch.com/9243aa46-39ce-412a-b6dd-c06c90dd77e4%2Ffavicon-32x32.png?v=1581693759737">
+      </a>
+      <a href="https://www.instagram.com/archytasrobotics/">
+      <img height="16px" src="https://cdn.glitch.com/9243aa46-39ce-412a-b6dd-c06c90dd77e4%2F200px-Instagram_simple_icon.svg.png?v=1581694155491">
+      </a>      
+      <hr />
+      <div id="status"></div> -->
+    </div>
+ 
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jsQR.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/decoders.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
+
